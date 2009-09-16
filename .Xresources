@@ -1,0 +1,155 @@
+!*vt100.translations: #override \
+!         <Key>KP_Home: string(0x1b) string("[1~")\n\
+!         <Key>KP_End: string(0x1b) string("[4~")\n\
+
+! Color section
+
+Rxvt*background:#222222
+Rxvt*foreground:#ffffff
+Rxvt*cursorColor:#fff000
+
+!black
+Rxvt*color0:#000000
+
+!red
+Rxvt*color1:#e01010
+
+!green
+Rxvt*color2:#00AA00
+
+!yellow
+Rxvt*color3:#FFFF00
+
+!blue
+Rxvt*color4:#224037
+
+!purple
+Rxvt*color5:#A020F0
+
+!cyan
+Rxvt*color6:#5B5BC7
+
+!white
+Rxvt*color7:#fefefe
+
+!bright-black
+Rxvt*color8:#6a6a6a
+
+!bright-red
+Rxvt*color9:#FF5555
+
+!bright-green
+Rxvt*color10:#90EE90
+
+!bright-yellow
+Rxvt*color11:#ffff2f
+
+!bright-blue
+Rxvt*color12:#5B5BC7
+
+!bright-purple
+Rxvt*color13:#e628ba
+
+!bright-cyan
+Rxvt*color14:#7D7DFB
+
+!bright-white
+Rxvt*color15:#ffffff
+Rxvt*colorBD:lightyellow
+Rxvt*colorUL:red
+
+urxvt*geometry:100x29+70+0
+urxvt*troughColor:white
+urxvt*shading:80
+urxvt*tintColor: #ffffff
+urxvt*saveLines:65535
+urxvt*cursorBlink:true
+urxvt*termName:xterm
+
+Xft.dpi: 96.0
+urxvt*perl-ext-common: matcher,tabbed,selection-popup,option-popup,searchable-scrollback<M-s>,readline
+URxvt*font:  xft:terminus:size=14
+!URxvt*font:  Courier:size=12
+!URxvt*font: xft:bitstream vera sans mono:pixelsize=12
+!XTerm*faceName: Terminus:style=Regular
+XTerm*faceName: Courier:style=Regular:size=11
+XTerm*faceSize: 11
+URxvt.cursorColor: darkblue 
+urxvt*tabbar-timeouts: 16:.:4:::1:+
+urxvt*scrollTtyOutput: false
+urxvt*scrollWithBuffer: true
+
+
+
+mrxvt.xft: true
+mrxvt.xftFont: DejaVu Sans Mono
+mrxvt.xftSize: 10
+mrxvt.macro.Shift+Ctrl+j: NewTab
+mrxvt.macro.Shift+Ctrl+k: Close 0
+mrxvt.holdExit: false
+mrxvt.smartResize: true
+mrxvt.smoothResize: true
+mrxvt.saveLines: 65535
+mrxvt.termName: xterm
+mrxvt.geometry:  1280x800+70+0
+mrxvt.maximized:  true
+mrxvt.xftAntialias: false
+mrxvt.xftHinting: false
+mrxvt.xftAutoHint: false
+mrxvt.macro.Ctrl+Shift+question: PrintScreen -ps perl -e '$_=join("",<STDIN>); s/\n+$/\n/g; print' > /tmp/scrollback
+mrxvt.macro.Add+Ctrl+Shift+question: NewTab "(Search)" /bin/sh -c "less -ifLR +G /tmp/scrollback; rm /tmp/scrollback"
+
+mrxvt.macro.Ctrl+slash: PrintScreen -s perl -e '$_=join("",<STDIN>); s/\n+$/\n/g; print' > /tmp/scrollback
+mrxvt.macro.Add+Ctrl+slash: NewTab "(Search)" /bin/sh -c 'view +"syn off|set nospell notitle |normal G" /tmp/scrollback; rm /tmp/scrollback'
+
+mrxvt*background:#202020
+mrxvt*foreground:#cccccc
+!black
+mrxvt*color0:#000000
+
+!red
+mrxvt*color1:#e01010
+
+!green
+mrxvt*color2:#00AA00
+
+!yellow
+mrxvt*color3:#FFFF00
+
+!blue
+mrxvt*color4:#224037
+
+!purple
+mrxvt*color5:#A020F0
+
+!cyan
+mrxvt*color6:#5B5BC7
+
+!white
+mrxvt*color7:#fefefe
+
+!bright-black
+mrxvt*color8:#6a6a6a
+
+!bright-red
+mrxvt*color9:#FF5555
+
+!bright-green
+mrxvt*color10:#90EE90
+
+!bright-yellow
+mrxvt*color11:#ffff2f
+
+!bright-blue
+mrxvt*color12:#4B4BD7
+
+!bright-purple
+mrxvt*color13:#e628ba
+
+!bright-cyan
+mrxvt*color14:#aDaDFF
+
+!bright-white
+mrxvt*color15:#ffffff
+mrxvt*colorBD:lightyellow
+mrxvt*colorUL:red
